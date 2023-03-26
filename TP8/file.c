@@ -61,7 +61,7 @@ int fileVide(const  T_File *prtF) // qd Tete == -1
 int filePleine(const  T_File *ptrF) // qd MAX elts dans la file 
 {
    
-    if(((ptrF->Queue)-(ptrF->Tete)==MAX)||((ptrF->Queue)-(ptrF->Tete)==-1)){
+    if(((ptrF->Queue)-(ptrF->Tete)==(MAX-1))||((ptrF->Queue)-(ptrF->Tete)==-1)){
         return 1 ;
     }
     else return 0;
